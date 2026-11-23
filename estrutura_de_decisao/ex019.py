@@ -19,47 +19,47 @@ while True:
         dezena = resto // 10
         unidade = resto % 10
 
-        centenas = ''
-        dezenas = ''
-        unidades = ''
+        centenas_texto = ''
+        dezenas_texto = ''
+        unidades_texto = ''
 
         if centena > 1:
-            centenas = f'{centena} centenas'
+            centenas_texto = f'{centena} centenas'
         elif centena == 1:
-            centenas = f'{centena} centena'
+            centenas_texto = f'{centena} centena'
         else:
-            centenas = ''
+            centenas_texto = ''
 
         if dezena > 1:
-            dezenas = f'{dezena} dezenas'
+            dezenas_texto = f'{dezena} dezenas'
         elif dezena == 1:
-            dezenas = f'{dezena} dezena'
+            dezenas_texto = f'{dezena} dezena'
         else:
-            dezenas = ''
+            dezenas_texto = ''
 
         if unidade > 1:
-            unidades = f'{unidade} unidades'
+            unidades_texto = f'{unidade} unidades'
         elif unidade == 1:
-            unidades = f'{unidade} unidade'
+            unidades_texto = f'{unidade} unidade'
         else:
-            unidades = ''
+            unidades_texto = ''
 
-        lista = []
-        if centenas != '':
-            lista.append(centenas)
-        if dezenas != '':
-            lista.append(dezenas)
-        if unidades != '':
-            lista.append(unidades)
+        lista_textos = []
+        if centenas_texto != '':
+            lista_textos.append(centenas_texto)
+        if dezenas_texto != '':
+            lista_textos.append(dezenas_texto)
+        if unidades_texto != '':
+            lista_textos.append(unidades_texto)
 
         resultado_lista = ''
 
-        if len(lista) == 2:
-            resultado_lista = ' e '.join(lista)
-        elif len(lista) > 2:
-            resultado_lista = f'{lista[0]}, {lista[1]} e {lista[2]}'
-        elif len(lista) == 1:
-            resultado_lista = lista[0]
+        if len(lista_textos) == 2:
+            resultado_lista = ' e '.join(lista_textos)
+        elif len(lista_textos) > 2:
+            resultado_lista = f'{lista_textos[0]}, {lista_textos[1]} e {lista_textos[2]}'
+        elif len(lista_textos) == 1:
+            resultado_lista = lista_textos[0]
 
         print(resultado_lista)
 
