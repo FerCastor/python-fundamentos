@@ -6,10 +6,21 @@
 # usuário vai inserir um valor válido
 
 while True:
-    dia_usuario = int(input("Informe o número correspondente ao dia desejado: ["
-                            "1] domingo, [2] segunda, etc:"))
-    dias_semana = {1:"Domingo", 2:"Segunda-feira", 3:"Terça-feira",
-                   4:"Quarta-feira", 5:"Quinta-feira", 6:"Sexta-feira", 7:"Sábado"}
+    dia_usuario = int(
+        input(
+            "Informe o número correspondente ao dia desejado: ["
+            "1] domingo, [2] segunda, etc:"
+        )
+    )
+    dias_semana = {
+        1: "Domingo",
+        2: "Segunda-feira",
+        3: "Terça-feira",
+        4: "Quarta-feira",
+        5: "Quinta-feira",
+        6: "Sexta-feira",
+        7: "Sábado",
+    }
 
     if dia_usuario in dias_semana:
         print(f"O dia escolhido foi: {dias_semana[dia_usuario]}")

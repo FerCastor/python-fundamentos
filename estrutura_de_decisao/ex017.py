@@ -8,25 +8,25 @@ while True:
 
         # Anos terminados em 00 só são bissextos se forem divisíveis por 400
         if ano % 400 == 0:
-            print(f'{ano} é um ano bissexto.')
+            print(f"{ano} é um ano bissexto.")
         else:
             # Se passar nesse if é um ano comum terminado em 00 que não é
             # divisível por 400
             if ano % 100 == 0:
-                print(f'{ano} não é bissexto.')
+                print(f"{ano} não é bissexto.")
             elif ano % 4 == 0:
-                print(f'{ano} é um ano bissexto.')
+                print(f"{ano} é um ano bissexto.")
             else:
-                print(f'{ano} não é bissexto.')
+                print(f"{ano} não é bissexto.")
 
         while True:
-            continuar = input('Deseja testar outro ano? S/N: ').strip().upper()
-            if continuar in ('S', 'N'):
+            continuar = input("Deseja testar outro ano? S/N: ").strip().upper()
+            if continuar in ("S", "N"):
                 break
-            print('Digite um valor válido.')
+            print("Digite um valor válido.")
 
-        if continuar == 'N':
-            print('Encerrando')
+        if continuar == "N":
+            print("Encerrando")
             break
     except ValueError:
-        print('Valor inválido!')
+        print("Valor inválido!")

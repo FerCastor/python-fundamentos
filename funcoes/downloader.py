@@ -1,4 +1,5 @@
 from pathlib import Path
+
 import requests
 from bs4 import BeautifulSoup
 
@@ -38,4 +39,3 @@ for titulo in soup.find_all("h4"):
         caminho_arquivo.write_text(conteudo_py, encoding="utf-8")
 
 print("Todos os exercícios foram baixados e salvos com sucesso!")
-

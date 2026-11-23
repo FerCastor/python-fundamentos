@@ -24,7 +24,7 @@ while True:
         print("A equação não é do segundo grau, pois A = 0")
         break
     else:
-        delta = b ** 2 - 4 * a * c
+        delta = b**2 - 4 * a * c
         if delta == 0:
             x = (-b + pow(delta, 0.5)) / (2 * a)
             print(f"A equação possui apenas uma raiz real: {x}")

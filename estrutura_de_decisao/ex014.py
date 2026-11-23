@@ -17,13 +17,15 @@ nota2 = float(input("Segunda nota: "))
 media = (nota1 + nota2) / 2
 
 if media >= 9:
-    print(f"Primeira nota: {nota1}, segunda nota: {nota2}, média: {media}: A - "
-          f"Aprovado!")
+    print(
+        f"Primeira nota: {nota1}, segunda nota: {nota2}, média: {media}: A - "
+        f"Aprovado!"
+    )
 elif media >= 7.5:
     print(f"{media}: B - Aprovado!")
 elif media >= 6:
     print(f"{media}: C - Aprovado!")
-elif media >=4:
+elif media >= 4:
     print(f"{media}: D - Reprovado!")
 else:
     print(f"{media}: E - Reprovado!")

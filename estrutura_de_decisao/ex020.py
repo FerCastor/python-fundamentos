@@ -11,11 +11,15 @@ while True:
         n3 = -1
 
         while n1 < 0 or n1 > 10:
-            n1 = float(input('A nota deve estar entre 0 e 10. Primeira nota: '))
+            n1 = float(
+                input("A nota deve estar entre 0 e 10. Primeira nota: ")
+            )
         while n2 < 0 or n2 > 10:
-            n2 = float(input('A nota deve estar entre 0 e 10. Segunda nota: '))
+            n2 = float(input("A nota deve estar entre 0 e 10. Segunda nota: "))
         while n3 < 0 or n3 > 10:
-            n3 = float(input('A nota deve estar entre 0 e 10. Terceira nota: '))
+            n3 = float(
+                input("A nota deve estar entre 0 e 10. Terceira nota: ")
+            )
 
         media = (n1 + n2 + n3) / 3
 
@@ -27,9 +31,12 @@ while True:
             print(f"Reprovado! Média: {media:.1f}")
 
         while True:
-            continuar = input("Deseja verificar outra média? [S] ou [N]: "
-                              "").strip().upper()
-            if continuar in ("S","N"):
+            continuar = (
+                input("Deseja verificar outra média? [S] ou [N]: ")
+                .strip()
+                .upper()
+            )
+            if continuar in ("S", "N"):
                 break
             print("Escolha uma opção válida")
         if continuar == "N":
