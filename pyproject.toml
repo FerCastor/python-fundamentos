@@ -1,0 +1,16 @@
+[tool.ruff]
+line-length = 79
+target-version = "py315"
+
+[tool.ruff.lint]
+select = [
+    "E4",  # Erros de sintaxe e estrutura
+    "E7",  # Problemas com instruções
+    "E9",  # Erros de execução
+    "F",   # Pyflakes: variáveis e imports problemáticos
+    "I",   # Ordenação de imports
+]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
